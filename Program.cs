@@ -1,5 +1,4 @@
-﻿using System;
-using GeometryGuru.Application.Services;
+﻿using GeometryGuru.Application.Services;
 using GeometryGuru.Domain.Models;
 
 namespace GeometryGuru.ConsoleApp
@@ -18,7 +17,7 @@ namespace GeometryGuru.ConsoleApp
             while (!exit)
             {
                 Console.Clear();
-                Console.WriteLine("=== Geometry Guru ===");
+                Console.WriteLine("\t\t=== GEOMETRY GURU ===");
                 Console.WriteLine("1. Circle Area");
                 Console.WriteLine("2. Rectangle Area");
                 Console.WriteLine("3. Triangle Possible Third Side");
@@ -30,28 +29,15 @@ namespace GeometryGuru.ConsoleApp
                 switch (choice)
                 {
                     case "1":
-                        {
-                            var circleService = new CicrcleService();
-                            Circle circle = circleService.GetCircleFromUser();
-                            double Area = circleService.CircleArea(circle.CircleRadius);
-                            Console.WriteLine($"Circle area is: {Area}");
-                            Pause();
-                        }
+                        ShowCircle();
                         break;
 
                     case "2":
-                        var rectangleService = new RectangleService();
-                        double rectArea = rectangleService.getRectangleFromUser();
-                        Console.WriteLine($"Rectangle area is: {rectArea}");
-                        Pause();
+                        ShowRectangle();
                         break;
 
                     case "3":
-                        var triangleService = new TriangleSidesService();
-                        var triangle = triangleService.GetTranglesFromUser();
-                        string result = triangleService.PossibleThirdSide(triangle);
-                        Console.WriteLine(result);
-                        Pause();
+                        ShowTriangle();
                         break;
 
                     case "4":
@@ -70,6 +56,38 @@ namespace GeometryGuru.ConsoleApp
         {
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
+        }
+        static void ShowCircle()
+        {
+            var circleService = new CicrcleService();
+
+            Circle circle = circleService.GetCircleFromUser();
+
+            double Area = circleService.CircleArea(circle.CircleRadius);
+
+            Console.WriteLine($"Circle area is: {Area}");
+            Pause();
+        }
+        static void ShowRectangle()
+        {
+            var rectangleService = new RectangleService();
+
+            double rectangleArea = rectangleService.GetRectangleFromUser();
+
+            Console.WriteLine($"Rectangle area is: {rectangleArea}");
+
+            Pause();
+        }
+        static void ShowTriangle()
+        {
+            var triangleService = new TriangleSidesService();
+
+            var triangle = triangleService.GetTranglesFromUser();
+
+            string result = triangleService.PossibleThirdSide(triangle);
+
+            Console.WriteLine(result);
+            Pause();
         }
     }
 }
