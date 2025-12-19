@@ -1,12 +1,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.5.2.0
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryGuru", "GeometryGuru.csproj", "{A9B943E3-251C-7834-B9FE-9A1CABFA97DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryGuru.Domain", "..\GeometryGuru.Domain\GeometryGuru.Domain.csproj", "{2B578B92-89D8-4BC6-B009-2EECEFEEF5CA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryGuru.Application", "..\GeometryGuru.Application\GeometryGuru.Application.csproj", "{B7E4BDF9-A003-4171-B493-77E007C98F17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryGuru.Domen", "..\GeometryGuru.Domen\GeometryGuru.Domen.csproj", "{E132FA71-D614-4D73-83FF-8045D0ED02D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,14 +16,10 @@ Global
 		{A9B943E3-251C-7834-B9FE-9A1CABFA97DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9B943E3-251C-7834-B9FE-9A1CABFA97DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9B943E3-251C-7834-B9FE-9A1CABFA97DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B578B92-89D8-4BC6-B009-2EECEFEEF5CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B578B92-89D8-4BC6-B009-2EECEFEEF5CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B578B92-89D8-4BC6-B009-2EECEFEEF5CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B578B92-89D8-4BC6-B009-2EECEFEEF5CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7E4BDF9-A003-4171-B493-77E007C98F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7E4BDF9-A003-4171-B493-77E007C98F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7E4BDF9-A003-4171-B493-77E007C98F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7E4BDF9-A003-4171-B493-77E007C98F17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E132FA71-D614-4D73-83FF-8045D0ED02D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E132FA71-D614-4D73-83FF-8045D0ED02D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E132FA71-D614-4D73-83FF-8045D0ED02D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E132FA71-D614-4D73-83FF-8045D0ED02D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
